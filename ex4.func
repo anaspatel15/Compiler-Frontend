@@ -1,0 +1,16 @@
+method sum(inp) vars res
+begin
+res:=0;
+while less(0,inp)
+begin
+res := plus(res,inp);
+inp := minus(inp,1);
+endwhile;
+return res;
+endmethod;
+method main() vars inp,res
+begin
+read inp;
+res := sum(inp);
+write res;
+endmethod;

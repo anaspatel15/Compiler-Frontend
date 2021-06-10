@@ -1,0 +1,15 @@
+method sum(inp) vars tmp
+begin
+if eq(inp,0) then
+res := inp;
+else
+tmp := sum(minus(inp,1));
+res := plus(tmp,inp);
+endif;
+endmethod;
+method main() vars inp,res
+begin
+read inp;
+res := sum(inp);
+write res;
+endmethod;
